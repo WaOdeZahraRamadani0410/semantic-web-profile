@@ -80,11 +80,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <link rel="stylesheet" href="style.css">
 
-
-
-
-
-
 <!-- ==========================
 SEMANTIC WEB JSON-LD
 ========================== -->
@@ -97,10 +92,10 @@ SEMANTIC WEB JSON-LD
  "@graph":[
 
 
- {
+{
  "@type":"Person",
 
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#person",
+ "@id":"https://example.com/waode-zahra-ramadani",
 
 
  "name":"Wa Ode Zahra Ramadani",
@@ -118,157 +113,342 @@ SEMANTIC WEB JSON-LD
 
 
 
- "affiliation":
+ "affiliation":{
 
- {
+
  "@type":"CollegeOrUniversity",
- "name":"Universitas Halu Oleo"
- },
+
+ "@id":"https://example.com/uho",
+
+ "name":"Universitas Halu Oleo",
+
+ "alternateName":"UHO",
+
+ "url":"https://uho.ac.id",
+
+ "address":{
+
+ "@type":"PostalAddress",
+
+ "addressLocality":"Kendari",
+
+ "addressRegion":"Sulawesi Tenggara",
+
+ "addressCountry":"ID"
+
+ }
+
+},
 
 
- "alumniOf":[
 
 
- {
+
+"alumniOf":[
+
+
+
+{
+ "@type":"Role",
+
+ "alumniOf":{
+
  "@type":"EducationalOrganization",
+
+ "@id":"https://example.com/sdn2-kontunaga",
+
  "name":"SD Negeri 2 Kontunaga"
+
  },
 
+ "startDate":"2011",
 
- {
+ "endDate":"2017"
+
+},
+
+
+
+
+{
+ "@type":"Role",
+
+ "alumniOf":{
+
  "@type":"EducationalOrganization",
+
+ "@id":"https://example.com/smp1-watopute",
+
  "name":"SMP Negeri 1 Watopute"
+
  },
 
+ "startDate":"2017",
 
- {
+ "endDate":"2020"
+
+},
+
+
+
+
+{
+ "@type":"Role",
+
+ "alumniOf":{
+
  "@type":"EducationalOrganization",
+
+ "@id":"https://example.com/sma2-raha",
+
  "name":"SMA Negeri 2 Raha"
+
  },
 
+ "startDate":"2020",
 
- {
+ "endDate":"2023"
+
+},
+
+
+
+
+{
+ "@type":"Role",
+
+ "alumniOf":{
+
  "@type":"CollegeOrUniversity",
+
+ "@id":"https://example.com/uho",
+
  "name":"Universitas Halu Oleo"
+
+ },
+
+ "startDate":"2023"
+
+}
+
+
+],
+
+
+
+
+
+"knowsAbout":[
+
+
+
+{
+ "@type":"DefinedTerm",
+
+ "@id":"https://example.com/skill/html",
+
+ "name":"HTML",
+
+ "termCode":"SKILL-001",
+
+ "inDefinedTermSet":{
+
+ "@type":"DefinedTermSet",
+
+ "name":"Skill Wa Ode Zahra Ramadani"
+
  }
 
- ],
+},
 
 
 
- "memberOf":[
+
+{
+ "@type":"DefinedTerm",
+
+ "@id":"https://example.com/skill/css",
+
+ "name":"CSS",
+
+ "termCode":"SKILL-002",
+
+ "inDefinedTermSet":{
+
+ "@type":"DefinedTermSet",
+
+ "name":"Skill Wa Ode Zahra Ramadani"
+
+ }
+
+},
 
 
- {
+
+
+{
+ "@type":"DefinedTerm",
+
+ "@id":"https://example.com/skill/mysql",
+
+ "name":"MySQL",
+
+ "termCode":"SKILL-003",
+
+ "inDefinedTermSet":{
+
+ "@type":"DefinedTermSet",
+
+ "name":"Skill Wa Ode Zahra Ramadani"
+
+ }
+
+},
+
+
+
+
+{
+ "@type":"DefinedTerm",
+
+ "@id":"https://example.com/skill/laravel",
+
+ "name":"Laravel",
+
+ "termCode":"SKILL-004",
+
+ "inDefinedTermSet":{
+
+ "@type":"DefinedTermSet",
+
+ "name":"Skill Wa Ode Zahra Ramadani"
+
+ }
+
+},
+
+
+
+
+{
+ "@type":"DefinedTerm",
+
+ "@id":"https://example.com/skill/semantic-web",
+
+ "name":"Semantic Web",
+
+ "termCode":"SKILL-005",
+
+ "inDefinedTermSet":{
+
+ "@type":"DefinedTermSet",
+
+ "name":"Skill Wa Ode Zahra Ramadani"
+
+ }
+
+}
+
+
+],
+
+
+
+
+
+"memberOf":[
+
+
+
+{
+ "@type":"Role",
+
+ "memberOf":{
+
  "@type":"Organization",
+
+ "@id":"https://example.com/hmps",
+
  "name":"HMPS Ilmu Komputer"
+
  },
 
+ "roleName":"Anggota"
 
- {
+},
+
+
+
+
+{
+ "@type":"Role",
+
+ "memberOf":{
+
  "@type":"Organization",
+
+ "@id":"https://example.com/osis",
+
  "name":"OSIS"
+
  },
 
+ "roleName":"Anggota"
 
- {
+},
+
+
+
+
+{
+ "@type":"Role",
+
+ "memberOf":{
+
  "@type":"Organization",
+
+ "@id":"https://example.com/pramuka",
+
  "name":"Pramuka"
- }
 
- ],
-
-
-
- "knowsAbout":[
-
-
- {
- "@type":"DefinedTerm",
- "name":"HTML"
  },
 
+ "roleName":"Anggota"
 
- {
- "@type":"DefinedTerm",
- "name":"CSS"
- },
-
-
- {
- "@type":"DefinedTerm",
- "name":"MySQL"
- },
-
-
- {
- "@type":"DefinedTerm",
- "name":"Laravel"
- },
-
-
- {
- "@type":"DefinedTerm",
- "name":"Semantic Web"
- }
-
-
- ],
+}
 
 
 
- "subjectOf":
+],
 
- {
+
+
+
+
+"subjectOf":{
 
  "@type":"CreativeWork",
 
  "name":"Website Profil Semantic Web",
 
- "about":"Profil mahasiswa berbasis Semantic Web menggunakan Schema.org dan JSON-LD"
+ "description":
+ "Website profil mahasiswa berbasis Semantic Web menggunakan Schema.org dan JSON-LD."
 
-
- }
-
-
- },
+}
 
 
 
-
-
- {
-
-
- "@type":"CreativeWork",
-
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#project",
-
-
- "name":"Website Profil Semantic Web",
-
-
- "creator":
-
- {
-
- "@type":"Person",
-
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#person"
-
- }
-
-
- }
+}
 
 
 
- ]
+
+
+]
 
 }
 
 </script>
-
 
 
 </head>
