@@ -91,242 +91,179 @@ SEMANTIC WEB JSON-LD
 
 <script type="application/ld+json">
 
-
 {
+ "@context":"https://schema.org",
 
-"@context":"https://schema.org",
+ "@graph":[
 
 
-"@graph":[
+ {
+ "@type":"Person",
 
+ "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#person",
 
 
-{
+ "name":"Wa Ode Zahra Ramadani",
 
-"@type":"Person",
+ "identifier":"F1G123016",
 
-"@id":"https://example.com/waode-zahra",
+ "email":"waodezahrar@gmail.com",
 
 
-"name":"Wa Ode Zahra Ramadani",
+ "jobTitle":"Mahasiswa Ilmu Komputer",
 
 
-"identifier":"F1G123016",
+ "description":
+ "Mahasiswa Program Studi Ilmu Komputer Universitas Halu Oleo semester 6 dengan minat teknologi informasi dan Semantic Web.",
 
 
-"jobTitle":"Mahasiswa Ilmu Komputer",
 
+ "affiliation":
 
-"description":
+ {
+ "@type":"CollegeOrUniversity",
+ "name":"Universitas Halu Oleo"
+ },
 
-"Mahasiswa Program Studi Ilmu Komputer Universitas Halu Oleo semester 6 dengan minat teknologi informasi dan Semantic Web.",
 
+ "alumniOf":[
 
 
+ {
+ "@type":"EducationalOrganization",
+ "name":"SD Negeri 2 Kontunaga"
+ },
 
-"email":
 
-"mailto:waodezahrar@gmail.com",
+ {
+ "@type":"EducationalOrganization",
+ "name":"SMP Negeri 1 Watopute"
+ },
 
 
+ {
+ "@type":"EducationalOrganization",
+ "name":"SMA Negeri 2 Raha"
+ },
 
 
-"address":{
+ {
+ "@type":"CollegeOrUniversity",
+ "name":"Universitas Halu Oleo"
+ }
 
+ ],
 
-"@type":"PostalAddress",
 
-"addressLocality":"Kendari",
 
-"addressRegion":"Sulawesi Tenggara",
+ "memberOf":[
 
-"addressCountry":"Indonesia"
 
+ {
+ "@type":"Organization",
+ "name":"HMPS Ilmu Komputer"
+ },
 
-},
 
+ {
+ "@type":"Organization",
+ "name":"OSIS"
+ },
 
 
+ {
+ "@type":"Organization",
+ "name":"Pramuka"
+ }
 
-"affiliation":{
+ ],
 
 
-"@type":"CollegeOrUniversity",
 
-"name":"Universitas Halu Oleo"
+ "knowsAbout":[
 
 
-},
+ {
+ "@type":"DefinedTerm",
+ "name":"HTML"
+ },
 
 
+ {
+ "@type":"DefinedTerm",
+ "name":"CSS"
+ },
 
 
-"alumniOf":[
+ {
+ "@type":"DefinedTerm",
+ "name":"MySQL"
+ },
 
 
-{
+ {
+ "@type":"DefinedTerm",
+ "name":"Laravel"
+ },
 
-"@type":"EducationalOrganization",
 
-"name":"SD Negeri 2 Kontunaga"
+ {
+ "@type":"DefinedTerm",
+ "name":"Semantic Web"
+ }
 
 
-},
+ ],
 
 
 
-{
+ "subjectOf":
 
-"@type":"EducationalOrganization",
+ {
 
-"name":"SMP Negeri 1 Watopute"
+ "@type":"CreativeWork",
 
+ "name":"Website Profil Semantic Web",
 
-},
+ "about":"Profil mahasiswa berbasis Semantic Web menggunakan Schema.org dan JSON-LD"
 
 
+ }
 
-{
 
-"@type":"EducationalOrganization",
+ },
 
-"name":"SMA Negeri 2 Raha"
 
 
-}
 
 
-],
+ {
 
 
+ "@type":"CreativeWork",
 
+ "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#project",
 
-"memberOf":[
 
+ "name":"Website Profil Semantic Web",
 
 
-{
+ "creator":
 
-"@type":"Organization",
+ {
 
-"name":"HMPS Ilmu Komputer"
+ "@type":"Person",
 
-},
+ "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#person"
 
+ }
 
 
-{
+ }
 
-"@type":"Organization",
 
-"name":"OSIS"
 
-},
-
-
-
-{
-
-"@type":"Organization",
-
-"name":"Pramuka"
-
-}
-
-
-],
-
-
-
-
-
-
-"knowsAbout":[
-
-
-{
-
-"@type":"DefinedTerm",
-
-"name":"HTML"
-
-},
-
-
-{
-
-"@type":"DefinedTerm",
-
-"name":"CSS"
-
-},
-
-
-{
-
-"@type":"DefinedTerm",
-
-"name":"Laravel"
-
-},
-
-
-{
-
-"@type":"DefinedTerm",
-
-"name":"Python"
-
-},
-
-
-{
-
-"@type":"DefinedTerm",
-
-"name":"Semantic Web"
-
-}
-
-
-],
-
-
-
-
-
-
-"creator":{
-
-
-"@type":"CreativeWork",
-
-"name":"Website Profil Semantic Web"
-
-},
-
-
-
-
-"sameAs":[
-
-
-"https://github.com/WaOdeZahraRamadani0410",
-
-"https://instagram.com/USERNAME_KAMU"
-
-
-]
-
-
-
-}
-
-
-
-
-]
-
+ ]
 
 }
 
