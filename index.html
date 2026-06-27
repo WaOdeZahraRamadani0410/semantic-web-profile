@@ -86,150 +86,313 @@ SEMANTIC WEB JSON-LD
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@graph":[
-
- {
-  "@type":"Person",
-  "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#person",
-  "name":"Wa Ode Zahra Ramadani",
-  "identifier":"F1G123016",
-  "email":"waodezahrar@gmail.com",
-  "jobTitle":"Mahasiswa Ilmu Komputer",
-
-  "affiliation":{
-    "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#uho"
-  },
-
-  "alumniOf":[
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#sd"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#smp"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#sma"
-    }
-  ],
-
-  "knowsAbout":[
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#html"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#css"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#mysql"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#laravel"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#semantic"
-    }
-  ],
-
-  "memberOf":[
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#hmps"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#osis"
-    },
-    {
-     "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#pramuka"
-    }
-  ]
-
- },
+"@context":"https://schema.org",
+"@graph":[
 
 
- {
- "@type":"CollegeOrUniversity",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#uho",
- "name":"Universitas Halu Oleo"
- },
+{
+"@type":"Person",
+"@id":"https://example.com/zahra",
+
+"name":"Wa Ode Zahra Ramadani",
+
+"identifier":"F1G123016",
+
+"jobTitle":"Mahasiswa Ilmu Komputer",
+
+"description":
+"Mahasiswa Program Studi Ilmu Komputer Universitas Halu Oleo semester 6 dengan ketertarikan pada pengembangan website, database, kecerdasan buatan, dan Semantic Web.",
 
 
- {
- "@type":"EducationalOrganization",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#sd",
- "name":"SD Negeri 2 Kontunaga"
- },
+"image":
+"assets/profile.jpg",
 
 
- {
- "@type":"EducationalOrganization",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#smp",
- "name":"SMP Negeri 1 Watopute"
- },
+"email":
+"waodezahrar@gmail.com",
 
 
- {
- "@type":"EducationalOrganization",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#sma",
- "name":"SMA Negeri 2 Raha"
- },
+"affiliation":
+{
+"@type":"CollegeOrUniversity",
+"name":"Universitas Halu Oleo"
+},
 
 
- {
- "@type":"DefinedTerm",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#html",
- "name":"HTML"
- },
+
+"knowsAbout":[
 
 
- {
- "@type":"DefinedTerm",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#css",
- "name":"CSS"
- },
+{
+"@type":"DefinedTerm",
+"name":"HTML",
+"termCode":"SKILL-001"
+},
 
 
- {
- "@type":"DefinedTerm",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#mysql",
- "name":"MySQL"
- },
+{
+"@type":"DefinedTerm",
+"name":"CSS",
+"termCode":"SKILL-002"
+},
 
 
- {
- "@type":"DefinedTerm",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#laravel",
- "name":"Laravel"
- },
+{
+"@type":"DefinedTerm",
+"name":"MySQL",
+"termCode":"SKILL-003"
+},
 
 
- {
- "@type":"DefinedTerm",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#semantic",
- "name":"Semantic Web"
- },
+{
+"@type":"DefinedTerm",
+"name":"Laravel",
+"termCode":"SKILL-004"
+},
 
 
- {
- "@type":"Organization",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#hmps",
- "name":"HMPS Ilmu Komputer"
- },
+{
+"@type":"DefinedTerm",
+"name":"Python",
+"termCode":"SKILL-005"
+},
 
 
- {
- "@type":"Organization",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#osis",
- "name":"OSIS"
- },
+{
+"@type":"DefinedTerm",
+"name":"Semantic Web",
+"termCode":"SKILL-006"
+}
+
+],
 
 
- {
- "@type":"Organization",
- "@id":"https://waodezahramanadi0410.github.io/semantic-web-profile/#pramuka",
- "name":"Pramuka"
- }
 
- ]
+"memberOf":[
+
+
+{
+"@type":"Organization",
+"name":"HMPS Ilmu Komputer"
+},
+
+
+{
+"@type":"Organization",
+"name":"OSIS"
+},
+
+
+{
+"@type":"Organization",
+"name":"Pramuka"
+}
+
+
+],
+
+
+
+
+"alumniOf":[
+
+
+{
+"@type":"EducationalOrganization",
+"name":"SD Negeri 2 Kontunaga"
+},
+
+
+{
+"@type":"EducationalOrganization",
+"name":"SMP Negeri 1 Watopute"
+},
+
+
+{
+"@type":"EducationalOrganization",
+"name":"SMA Negeri 2 Raha"
+}
+
+
+],
+
+
+
+
+"subjectOf":[
+
+
+{
+"@type":"CreativeWork",
+
+"name":"Website Profil Semantic Web",
+
+"description":
+"Website profil mahasiswa berbasis Semantic Web menggunakan HTML CSS dan Schema.org JSON-LD."
+
+},
+
+
+{
+"@type":"CreativeWork",
+
+"name":"Sistem Informasi Berbasis Database",
+
+"description":
+"Project pengolahan data menggunakan database MySQL."
+
+
+},
+
+
+{
+"@type":"CreativeWork",
+
+"name":"Analisis Machine Learning",
+
+"description":
+"Analisis data menggunakan Python dan algoritma Machine Learning."
+
+}
+
+
+],
+
+
+
+"sameAs":[
+
+
+"https://instagram.com/rmdniii0410",
+
+"https://github.com/WaOdeZahraRamadani0410"
+
+
+]
+
+},
+
+
+
+
+{
+
+
+"@type":"CollegeOrUniversity",
+
+"name":"Universitas Halu Oleo",
+
+"url":
+"https://uho.ac.id",
+
+
+"address":
+{
+
+"@type":"PostalAddress",
+
+"addressLocality":"Kendari",
+
+"addressCountry":"Indonesia"
+
+}
+
+},
+
+
+
+
+
+{
+
+
+"@type":"Organization",
+
+"name":"HMPS Ilmu Komputer",
+
+"description":
+"Organisasi mahasiswa Program Studi Ilmu Komputer Universitas Halu Oleo."
+
+},
+
+
+
+
+
+{
+
+
+"@type":"Organization",
+
+"name":"OSIS",
+
+"description":
+"Organisasi siswa intra sekolah SMP Negeri 1 Watopute."
+
+},
+
+
+
+
+
+{
+
+
+"@type":"Organization",
+
+"name":"Pramuka",
+
+"description":
+"Kegiatan organisasi yang membangun disiplin dan kepemimpinan."
+
+},
+
+
+
+
+
+{
+
+
+"@type":"CreativeWork",
+
+"name":"Website Profil Semantic Web",
+
+"description":
+"Website portfolio mahasiswa dengan implementasi Schema.org JSON-LD."
+
+
+},
+
+
+
+
+
+{
+
+
+"@type":"SoftwareApplication",
+
+"name":"Sistem Informasi Berbasis Database",
+
+"applicationCategory":
+"WebApplication",
+
+"operatingSystem":
+"Web Browser",
+
+"description":
+"Aplikasi berbasis database menggunakan MySQL dan teknologi web."
+
+}
+
+
+
+
+
+]
+
 }
 </script>
 
